@@ -1,18 +1,10 @@
 % Mengimpor gambar
 
-<<<<<<< HEAD
 Base = imread('Linux.jpg');
 figure,imshow(Base);title('Gambar Awal')
 
 % Impor pesan gambar dan di konversikan menjadi gambar binary
 Message = imread('Pesan.png');
-=======
-Base = imread('1029037.jpg');
-figure,imshow(Base);title('Gambar Awal')
-
-% Impor pesan gambar dan di konversikan menjadi gambar binary
-Message = imread('IMG_20210413_200254.jpeg');
->>>>>>> a5030bd02db0b119c11eaf0463b95ea3f4875227
 Msg = imbinarize(rgb2gray(Message));title('Pesan Gambar yang di sisipi')
 
 % Mengukur ulang pesan dan gambar awal menjadi ukuran yang sama
@@ -24,14 +16,7 @@ New(:,:,1) = bitset(New(:,:,1),1,Msg);
 
 % Menyimpan File Gambar
 figure,imshow(New);title('Gambar dengan pesan rahasia')
-<<<<<<< HEAD
 figure,imshowpair(Base,New,'montage');title('Gambar Dekripsi & Gambar yang sudah di enkripsi')
 % imwrite(New,'MsgIm.bmp');
 % clear all;
-=======
-figure,imshowpair(Base,New,'montage');title('Gambar awal & Gambar yang sudah di enkripsi')
-
-%imwrite(New,'MsgIm.bmp');
-%clear all;
->>>>>>> a5030bd02db0b119c11eaf0463b95ea3f4875227
 

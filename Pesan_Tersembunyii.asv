@@ -15,12 +15,8 @@ Sinyal_Pesan = Awal;
 Sinyal_Pesan(:,:,1) = bitset(Sinyal_Pesan(:,:,1),8,Msg);
 
 % Menyimpan File Gambar
-%figure,imshow(Sinyal_Pesan);title('Gambar dengan pesan rahasia')
-%figure,imshowpair(Awal,Sinyal_Pesan,'montage');title('Gambar Dekripsi & Gambar yang sudah di enkripsi')
-figure,imshow(Sinyal_Pesan);title('Gambar yang sudah di enkripsi')
-figure,imshow(Awal);title('Gambar yang sudah di dekripsi')
-
-
+figure,imshow(Sinyal_Pesan);title('Gambar dengan pesan rahasia')
+figure,imshow(Awal,Sinyal_Pesan,'montage');title('Gambar Dekripsi & Gambar yang sudah di enkripsi')
 % imwrite(New,'MsgIm.bmp');
 % clear all;
 

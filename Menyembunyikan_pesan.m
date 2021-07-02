@@ -17,6 +17,7 @@ New(:,:,1) = bitset(New(:,:,1),1,Msg);
 % Menyimpan File Gambar
 figure,imshow(New);title('Gambar dengan pesan rahasia')
 figure,imshowpair(Base,New,'montage');title('Gambar awal & Gambar yang sudah di enkripsi')
-% imwrite(New,'MsgIm.bmp');
-% clear all;
+
+%imwrite(New,'MsgIm.bmp');
+%clear all;
 
